@@ -1,6 +1,5 @@
 from tokenize import String
 from flask_wtf import FlaskForm
-from h11 import Data
 from wtforms import StringField, SubmitField, PasswordField, EmailField
 from wtforms.validators import DataRequired, URL, Email
 from flask_ckeditor import CKEditorField
