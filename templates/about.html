@@ -1,0 +1,32 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static', filename='img/about-bg.jpg')}})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Me</h1>
+            <span class="subheading">This is what I do.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Hi, I am Saniya Maheshwari, a sophomore at IIIT Lucknow pursuig B.Tech in Computer Science & Artificial Intelligence.</p>
+        <p>Apart from this, I am a learning full-stack web developer and this website is created by me myself. The technologies I used to make this webiste are, HTML, CSS, JavaScript, JQuery, Jinja Templating and Bootstrap for the frontend part, and the backend uses Flask as its backbone.</p>
+        <p>For the time being, only I am allowed to post and edit posts on this personal blog website, but in future I will also edit it to let other authenticated users to post their content as well. But, registered users are still allowed to comment on the posts and put their thoughts infront of others.</p>
+        <p> If you still wanna know more, you can visit my personal website <a href = "https://saniyamaheshwari.github.io/cv/">here</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  {% include "footer.html" %}
