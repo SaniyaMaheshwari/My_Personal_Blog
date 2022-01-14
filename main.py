@@ -11,9 +11,6 @@ from flask_login import UserMixin, login_user, LoginManager, login_required, cur
 from forms import CommentForm, CreatePostForm, LoginForm, RegisterForm
 from flask_gravatar import Gravatar
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("KEY")
@@ -24,7 +21,7 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 
 ##CONNECT TO DB
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///new-blog.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
